@@ -1,0 +1,57 @@
+   body {
+      font-family: 'Nunito Sans', sans-serif;
+      background-color: #f9fafc;
+      color: #1a2b3c;
+    }
+    :root {
+      --denim-dark: #1e3a5f;
+      --denim-mid: #2f4d77;
+      --denim-light: #5a7ca8;
+      --denim-bg: #f4f6fa;
+    }
+    .navbar, footer {
+      background-color: var(--denim-dark) !important;
+    }
+    .btn-primary {
+      background-color: var(--denim-mid);
+      border-color: var(--denim-mid);
+    }
+    .btn-primary:hover {
+      background-color: var(--denim-light);
+      border-color: var(--denim-light);
+    }
+    .hero-overlay {
+      background: rgba(30, 58, 95, 0.5);
+    }
+    section.py-5 {
+      padding-top: 5rem !important;
+      padding-bottom: 5rem !important;
+    }
+    .card {
+      border: none;
+      border-radius: 0.75rem;
+    }
+    .card-title {
+      color: var(--denim-dark);
+    }
+    .card-text {
+      color: #2c3e50;
+    }
+    .p-3.border.rounded {
+      background-color: white;
+      border: 1px solid var(--denim-light) !important;
+      min-height: 180px;
+    }
+    .p-3.border.rounded strong {
+      color: var(--denim-mid);
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    .p-3.border.rounded p {
+      font-size: 0.9rem;
+      color: #34495e;
+    }
+    h2 {
+      color: var(--denim-mid);
+      font-weight: 700;
+    }
