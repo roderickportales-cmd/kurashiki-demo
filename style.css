@@ -1,4 +1,6 @@
-/* Global styles */
+/* =========================================================
+   GLOBAL STYLES
+   ========================================================= */
 body {
   font-family: 'Nunito Sans', sans-serif;
   background-color: #f9fafc;
@@ -6,20 +8,30 @@ body {
   padding-top: 56px; /* offset for fixed navbar */
 }
 
-/* Denim palette */
+/* =========================================================
+   COLOR PALETTE (Denim tones)
+   ========================================================= */
 :root {
-  --denim-dark: #1e3a5f;
-  --denim-mid: #2f4d77;
-  --denim-light: #5a7ca8;
-  --denim-bg: #f4f6fa;
+  --denim-dark: #1e3a5f;   /* deep navy blue */
+  --denim-mid: #2f4d77;    /* medium denim */
+  --denim-light: #5a7ca8;  /* lighter denim tone */
+  --denim-bg: #f4f6fa;     /* pale background blue */
+  --denim-footer: #7b9cc0; /* new lighter shade for footer */
 }
 
-/* Navbar & footer */
-.navbar, footer {
+/* =========================================================
+   NAVBAR & FOOTER
+   ========================================================= */
+.navbar {
   background-color: var(--denim-dark) !important;
 }
+footer {
+  background-color: var(--denim-footer) !important;
+}
 
-/* Buttons */
+/* =========================================================
+   BUTTONS
+   ========================================================= */
 .btn-primary {
   background-color: var(--denim-mid);
   border-color: var(--denim-mid);
@@ -29,11 +41,13 @@ body {
   border-color: var(--denim-light);
 }
 
-/* Hero section */
+/* =========================================================
+   HERO SECTION
+   ========================================================= */
 .hero {
   position: relative;
-  height: 75vh;       /* 75% of viewport height */
-  width: 100vw;
+  height: 75vh;        /* takes up 75% of viewport height */
+  width: 100vw;        /* full width */
   overflow: hidden;
   color: white;
   text-shadow: 0 2px 5px rgba(0,0,0,0.7);
@@ -42,16 +56,21 @@ body {
   justify-content: center;
   text-align: center;
 }
+
+/* Video fills container, centered vertically */
 .hero video {
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 0;
+  transform: translateY(-50%);
   width: 100%;
-  height: 100%;
-  object-fit: cover;       /* fill container, crop if needed */
-  object-position: bottom; /* keep the bottom in view, crop the top */
+  height: auto;
+  min-height: 100%;
+  object-fit: cover;
   z-index: 0;
 }
+
+/* Semi-transparent overlay for readability */
 .hero-overlay {
   position: absolute;
   top: 0;
@@ -61,18 +80,24 @@ body {
   background: rgba(30, 58, 95, 0.5);
   z-index: 1;
 }
+
+/* Text sits above overlay and video */
 .hero-content {
   position: relative;
   z-index: 2;
 }
 
-/* Section spacing */
+/* =========================================================
+   SECTION SPACING
+   ========================================================= */
 section.py-5 {
   padding-top: 5rem !important;
   padding-bottom: 5rem !important;
 }
 
-/* Card styling */
+/* =========================================================
+   CARD STYLING
+   ========================================================= */
 .card {
   border: none;
   border-radius: 0.75rem;
@@ -84,27 +109,39 @@ section.py-5 {
   color: #2c3e50;
 }
 .card-img-fixed {
-  height: 650px;        /* adjust as needed */
+  height: 650px;        /* consistent card image height */
   object-fit: cover;
-  object-position: top; /* keeps top in view */
+  object-position: top;
   width: 100%;
 }
 
-/* Grid boxes */
+/* =========================================================
+   GRID SECTION (Things to Experience)
+   ========================================================= */
 .bg-denim-dark {
   background-color: var(--denim-dark) !important;
 }
 
+/* Section title color for dark backgrounds */
 .bg-denim-dark h2 {
-  color: #e0e6f0; /* light, soft blue for main section title */
+  color: #e0e6f0;
 }
 
+/* Grid box styling */
 .p-3.border.rounded {
   background-color: var(--denim-mid);
   border: 1px solid var(--denim-light) !important;
   min-height: 180px;
   color: white;
+  transition: background 0.3s ease;
 }
+
+/* Lighten on hover for interactivity */
+.p-3.border.rounded:hover {
+  background-color: var(--denim-light);
+}
+
+/* Text colors inside boxes */
 .p-3.border.rounded strong {
   color: #f0f4fa;
   display: block;
@@ -115,11 +152,10 @@ section.py-5 {
   color: #f0f4fa;
 }
 
-/* Headings */
+/* =========================================================
+   HEADINGS
+   ========================================================= */
 h2 {
   color: var(--denim-mid);
   font-weight: 700;
 }
-
-
-
