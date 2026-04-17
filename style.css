@@ -45,7 +45,7 @@ footer {
    HERO SECTION
    ========================================================= */
 .hero {
-  position: bottom;
+  position: relative;
   height: 75vh;        /* takes up 75% of viewport height */
   width: 100vw;        /* full width */
   overflow: hidden;
